@@ -1,0 +1,19 @@
+{
+    "name": "daniel/agro-app-raw",
+    "description": "Farm Manager Offline App",
+    "type": "project",
+    "require": {
+        "symfony/twig-bundle": "^7.2",
+        "symfony/http-foundation": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Daniel\\AgroAppRaw\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SeriousDesign"
+        }
+    ]
+}
