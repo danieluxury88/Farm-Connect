@@ -1,7 +1,7 @@
 import { getDatabase } from './db.js';
 
-// const BASE_URL = 'https://agro.seriousdesign.net';
-const BASE_URL = 'http://agro.test';
+const BASE_URL = 'https://agro.seriousdesign.net';
+// const BASE_URL = 'http://agro.test';
 
 export async function syncRecordsToServer() {
     const db = await getDatabase();
