@@ -3,7 +3,7 @@ const ASSETS_TO_CACHE = [
     '/',
     '/index.php',
     '/manifest.json',
-    '/bundle.js',
+    '/bundle.v1.js',
     '/sql-wasm.wasm',
     '/icons/icon-192x192.png',
     '/icons/icon-512x512.png'
