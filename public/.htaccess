@@ -1,0 +1,18 @@
+<IfModule mod_mime.c>
+    # Serve WebAssembly files with the correct MIME type
+    AddType application/wasm .wasm
+</IfModule>
+
+# Enable CORS for Testing (Optional for Development Only)
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+</IfModule>
+
+# Redirect Index for Clean URLs (Optional if you want pretty URLs without .php)
+DirectoryIndex index.php
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [L,QSA]
