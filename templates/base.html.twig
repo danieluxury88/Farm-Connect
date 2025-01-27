@@ -10,20 +10,6 @@
     <script src="/public/bundle.v1.js" defer></script>
 </head>
 <body>
-    <h1>{{ title }}</h1>
-
-    <form id="record-form">
-        <label for="animal_id">Animal ID:</label>
-        <input type="number" id="animal_id" required>
-        <label for="weight">Weight (kg):</label>
-        <input type="number" id="weight" required>
-        <label for="date">Date:</label>
-        <input type="date" id="date" required>
-        <button type="submit">Save Record</button>
-    </form>
-    <p>hola</p>
-
-    <h2>Stored Records:</h2>
-    <ul id="record-list"></ul>
+    {% block content %}{% endblock %}
 </body>
 </html>

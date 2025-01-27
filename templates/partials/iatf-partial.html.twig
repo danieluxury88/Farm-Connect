@@ -1,0 +1,14 @@
+<label>
+  Cow ID:<input type="text" name="cow_id[]" class="cow-id" required />
+  <span class="cow-breed"></span>
+</label>
+<label>Bull ID:<input type="text" name="bull_id[]" required /></label>
+<label>
+  Ovaric Status:<select name="ovaric_status[]" required>
+    <option value="normal">Normal</option>
+    <option value="cystic">Cystic</option>
+  </select>
+</label>
+<label>Days of Gestation:<input type="number" name="days_of_gestation[]" required /></label>
+<label>Observations:<textarea name="observations[]"></textarea></label>
+<button type="button" class="remove-row-btn">Remove</button>
